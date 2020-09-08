@@ -1,0 +1,36 @@
+{
+  "name": "hegic-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "DEVMOD=true truffle console",
+    "ganache": "ganache-cli -e 10000000 -m \"pull explain moon stereo foil tuna gospel tape battle come smooth fresh lizard culture review\"",
+    "test": "truffle test",
+    "coverage": "truffle run coverage",
+    "lint": "prettier './**/*.js' './**/*.sol' './**/*.md' --write"
+  },
+  "author": "",
+  "license": "GPLv3",
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.4",
+    "@truffle/debug-utils": "^4.2.1",
+    "@truffle/hdwallet-provider": "^1.0.40",
+    "chai": "^4.2.0",
+    "ganache-cli": "^6.9.1",
+    "mocha": "^7.2.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-solidity": "^1.0.0-alpha.55",
+    "solidity-coverage": "^0.7.10",
+    "truffle": "^5.1.42",
+    "truffle-flattener": "^1.4.4"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.0.8",
+    "@openzeppelin/contracts": "^3.1.0",
+    "@uniswap/v2-periphery": "^1.0.0-beta.0"
+  }
+}
